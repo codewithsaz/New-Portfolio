@@ -8,12 +8,18 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import ToogleThemeButton from "./ToogleThemeButton";
 import scklogolight from "../assets/scklogolight.png";
-import scklogodark from "../assets/scklogodark.png";
 import { Link } from "react-router-dom";
 
 function NavList() {
   return (
     <ul className="my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 text-black dark:text-white">
+      <Typography
+        as="li"
+        variant="h6"
+        className="p-1 font-medium dark:hover:text-accentPrimary hover:text-accentSecondary"
+      >
+        <Link to="/#projects">Projects</Link>
+      </Typography>
       <Typography
         as="li"
         variant="h6"
@@ -26,14 +32,7 @@ function NavList() {
         variant="h6"
         className="p-1 font-medium dark:hover:text-accentPrimary hover:text-accentSecondary transition-colors"
       >
-        <Link to="/#experience">Workflow</Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="h6"
-        className="p-1 font-medium dark:hover:text-accentPrimary hover:text-accentSecondary"
-      >
-        <Link to="/#projects">Projects</Link>
+        <Link to="/#workflow">Workflow</Link>
       </Typography>
       <Typography
         as="li"
@@ -61,17 +60,12 @@ const MainNavbar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 z-10 w-full lg:w-3/4  ">
-      <Navbar className="max-w-full h-max px-6 py-3 text-black bg-gray-50 dark:text-white dark:bg-[#2e1065] drop-shadow-lg  border-0 shadow-none rounded-b-xl rounded-t-none ">
+    <div className=" fixed top-0 z-10 w-full lg:w-3/4  ">
+      <Navbar className="max-w-full h-max px-6 py-3 text-black  dark:text-white bg-transparent drop-shadow-lg  border-0 shadow-none rounded-b-xl rounded-t-none ">
         <div className="flex items-center justify-between ">
           <Link to="/">
             <img
-              className="h-[2em] w-[2em]   object-fill object-center mr-4 hidden dark:block "
-              src={scklogodark}
-              alt="nature image"
-            />
-            <img
-              className="h-[2em] w-[2em] mr-4  block dark:hidden   object-fill object-center "
+              className="h-[2em] w-[2em] mr-4  block    object-fill object-center "
               src={scklogolight}
               alt="nature image"
             />

@@ -11,14 +11,10 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full    flex flex-col  items-center dark:bg-gradient-to-b dark:from-[#181229]  dark:to-[#2e1065] "
+      className="w-full    flex flex-col  items-center dark:bg-gradient-to-b dark:from-[#000000]  dark:to-[#6f41b58c] "
     >
-      <div className="w-full lg:w-3/4 my-10 lg:my-20 flex justify-center items-center ">
+      <div className="w-full lg:w-3/4 my-10 lg:my-20 flex justify-center items-center  ">
         <div className="w-full flex flex-col justify-center items-center ">
-          <Typography variant="h2" className="text-center">
-            Contact Me!
-          </Typography>
-
           <div className=" w-full  gap-6 mt-10 flex flex-wrap justify-center items-center p-4">
             <div className=" w-full flex justify-center items-center p-2 ">
               <img
@@ -93,8 +89,6 @@ const Contact = () => {
                 </Typography>
               </div>
             </div>
-
-            {/* Rest of the contact cards go here */}
           </div>
         </div>
       </div>

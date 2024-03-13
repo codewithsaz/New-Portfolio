@@ -13,8 +13,8 @@ const Layout = () => {
     <div className=" w-full  h-full flex flex-col justify-center items-center ">
       <MainNavbar />
       <Intro />
-      <Skills />
       <Project />
+      <Skills />
       <Experince />
       <Contact />
       <Footer />

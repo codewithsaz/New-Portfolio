@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full relative dark:bg-[#2e1065] px-4 pt-20 dark:text-white flex flex-col justify-center items-center">
+    <footer className="w-full relative dark:bg-[#6f41b58c] px-4 pt-20 dark:text-white flex flex-col justify-center items-center">
       {/* <div className="absolute -top-10 left-1/2 h-16 w-16 -translate-x-1/2 rounded-xl border-b-2  border-[#140b2d] dark:border-[#ffffff]  p-2 mt-10 sm:mt-5 flex justify-center items-center ">
         <img
           className=" object-contain object-center  cursor-pointer hidden dark:block "
